@@ -39,6 +39,8 @@ class DepartementController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
+
         Departement::create([
             'nom' => $request->name
         ]);
